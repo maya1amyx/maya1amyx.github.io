@@ -1,0 +1,44 @@
+h1{ color: blue ;
+  font-family: 'Wendy One', sans-serif;
+  font-size: 60px;
+}
+#tabs{
+  /* Removes bullets and formating from list */
+  list-style-type: none;
+  margin:0;
+  padding: 0;
+  display:inline;
+}
+
+ul{
+  list-style-type:none;
+  margin: 0;
+  padding:0;
+  overflow:hidden;
+}
+
+li{
+  float:left;
+  background-color: #a8bcdb;
+
+}
+
+li a{
+  display: block;
+  padding: 8px;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover{
+  background-color: #8096b7;
+}
+
+header{
+  border-style: double;
+  border-width: 100%;
+  height: 200px;
+  background-color: white;
+}

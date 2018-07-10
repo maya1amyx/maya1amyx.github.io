@@ -1,0 +1,22 @@
+body {background-color: #F0FFFF}
+
+
+/* .container {
+    position: relative;
+    text-align: left; */
+
+/* .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: 'Knewave', cursive;
+} */
+
+
+
+#Top{
+  background-color: white ;
+  margin: 20px 20px 20px 20px;
+}
