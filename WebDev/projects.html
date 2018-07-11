@@ -11,6 +11,63 @@
     <link rel="stylesheet" href="css/projectstyles.css">
 
     <title></title>
+
+    <style>
+* {
+    box-sizing: border-box;
+}
+
+.row {
+    display: flex;
+}
+
+/* Create three equal columns that sits next to each other */
+.column {
+    flex: 50%;
+}
+
+/*https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_fade*/
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-40%, -50%);
+}
+
+.container {
+  position: relative;
+  width: 100%;
+}
+
+
+.image {
+  display: block;
+  width: 50%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #344f7a;
+}
+
+.container:hover .overlay {
+  opacity: .7;
+}
+
+</style>
+
+
   </head>
   <header>
 
@@ -21,8 +78,8 @@
       <!-- Other Tabs-->
       <ul id="tabs">
         <li><a href = "../index.html" > Home </a> </li>
-        <li><a href = "WebDev/projects.html" > Projects </a> </li>
-        <li><a href = "WebDev/join.html" > Join </a></li>
+        <li><a href = "projects.html" > Projects </a> </li>
+        <li><a href = "join.html" > Join </a></li>
       </ul>
 
     </nav>
@@ -35,10 +92,9 @@
     <!--Makes a list. Each element must have <li> -->
     <ul>
       <li><a href = "file:///Users/girlswhocode/Desktop/web%20dev/chalkArt.html" > <em>Chalk Art</em> </a> </li>
-      <!--Our seasonal chalk art in the cafeteria is changed every few months to reflect the time of year. In the 2017-18 school year, we designed the
-      chalk board with 6 different themes: fall, halloween, winter, valentines, spring, and summer. Each of the designs are voted on my club members.-->
+
       <li><a href = "file:///Users/girlswhocode/Desktop/web%20dev/DoorArt.html" > <em>Homecoming Door Decorations</em> </a></li>
-      <!--The 2017 Homecoming theme was Pixar movies. The Mural Club was assigned to create decorations for the Homecoming dance-->
+
       <li><a href = "file:///Users/girlswhocode/Desktop/web%20dev/windowPainting.html" > <em>Window Painting</em> </a> </li>
       <li> <a href = "file:///Users/girlswhocode/Desktop/web%20dev/polePainting.html" > <em>Pole Painting</em> </a></li>
     </ul>
@@ -51,29 +107,47 @@
       <!--<img src= "img/ValArt1.jpg" alt="Chalk Art" style="width:50%;">-->
 
 
+      <div class="row">
+  <div class="column, image">
       <div class="container">
-
-        <img src="img/ValArt1.jpg" alt="Chalk Art" style="width:40%; align= "left"" class= "image">
-        <!-- <div class="centered">CHALK ART</div> -->
-
-        <div class="overlay">
-          <div class="text"> CHALK ART </div>
-        </div>
-
+    <img src="img/fallArt1.jpg" alt="chalk" style="width:100%">
+              <div class="overlay">
+                <div class="text">Chalk Art</div>
+             </div>
       </div>
+  </div>
 
-      <!--https://www.w3schools.com/howto/howto_css_image_overlay.asp-->
+  <div class="column, image">
+      <div class="container">
+    <img src="img/DoorArt.jpg" alt="Door" style="width:100%">
+             <div class="overlay">
+                <div class="text">Homecoming Decorations</div>
+              </div>
+              </div>
+  </div>
 
-        <img src="img/DoorArt.jpg" alt="Chalk Art" style="width:40%; align= "left"">
-        <!-- <div class="centered">HOMECOMING DECORATIONS</div> -->
+</div> <!--end row1-->
 
-<br>
-        <img src="img/poleArt1.jpg" alt="polePainting" style="width:40%;">
-        <!-- <div class="centered">WINDOW ART</div> -->
+<div class="row">
+  <div class="column, image">
+      <div class="container">
+    <img src="img/windowArt5.jpg" alt="Window" style="width:100%">
+                <div class="overlay">
+                    <div class="text">Window Painting</div>
+                </div>
+    </div>
+  </div>
 
-        <img src="img/windowArt5.jpg" alt="window art" style="width:40%;">
-        <!-- <div class="centered">WINDOW ART</div> -->
+  <div class="column, image">
+      <div class="container">
+    <img src="img/poleArt1.jpg" alt="Pole" style="width:100%">
+                <div class="overlay">
+                    <div class="text">Pole Painting</div>
+                </div>
+        </div>
+  </div>
 
+</div>  <!--end row2-->
 
 
       <!-- <div class="container">
